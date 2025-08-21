@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quotation Subject Viewer</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #3C3C3C;
+        background-color: #F9F9F9;
+    }
+
+    :root {
+        --odoo-primary: #875A7B;
+        --odoo-accent: #F2F2F2;
+        --odoo-dark-text: #3C3C3C;
+        --odoo-link: #613DC1;
+    }
+
+    .banner {
+        background-color: var(--odoo-primary);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .banner h1 {
+        margin: 0;
+        font-size: 42px;
+    }
+    .banner p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: -40px auto 40px;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: var(--odoo-primary);
+        border-bottom: 2px solid var(--odoo-primary);
+        padding-bottom: 6px;
+        margin-top: 30px;
+    }
+
+    ul {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+
+    li {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    li span.tooltip {
+        visibility: hidden;
+        width: 240px;
+        background-color: var(--odoo-primary);
+        color: #fff;
+        text-align: left;
+        padding: 8px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 120%;
+        opacity: 0;
+        transition: opacity 0.3s;
+        font-size: 13px;
+    }
+
+    li:hover span.tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    a {
+        color: var(--odoo-link);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .badge {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .screenshots {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .screenshots img {
+        max-width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        flex: 1 1 calc(50% - 15px);
+    }
+
+    .footer {
+        margin-top: 50px;
+        font-size: 14px;
+        color: #777;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="banner">
+    <h1>Task Sequence Number</h1>
+    <p>Automatically assign and display sequence numbers for tasks</p>
+    <img class="badge" src="https://img.shields.io/badge/license-LGPL--3-blue.svg" alt="License: LGPL-3">
+</div>
+
+<div class="container">
+    <h2>Overview</h2>
+    <p>
+        Task Sequence Number enhances Odoo's project management by assigning an automatic sequence 
+        number to each task. The sequence is visible in the task list view, helping teams quickly 
+        identify and organize their work.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li>
+            📌 Automatic numbering of tasks
+            <span class="tooltip">
+                Every new task created will receive a unique sequence number, ensuring clear tracking 
+                and easy reference.
+            </span>
+        </li>
+        <li>
+            📌 Sequence visible in the task tree view
+            <span class="tooltip">
+                A new column displays the task sequence number directly in the list view, making it 
+                simple for users to locate and distinguish tasks.
+            </span>
+        </li>
+        <li>
+            📌 Fully integrated with Odoo's project workflow
+            <span class="tooltip">
+                The numbering is seamlessly applied to Odoo's existing project and task processes, 
+                ensuring compatibility without extra configuration.
+            </span>
+        </li>
+        <li>
+            📌 Lightweight and easy to install
+            <span class="tooltip">
+                The module is simple to set up, works immediately after installation, and does not 
+                affect other project features.
+            </span>
+        </li>
+    </ul>
+
+    <h2>Benefits</h2>
+    <ul>
+        <li>⏱ Save time by quickly identifying tasks through unique numbers</li>
+        <li>📋 Improve task organization and tracking within projects</li>
+        <li>🚀 Boost team efficiency by simplifying task referencing in discussions and reports</li>
+    </ul>
+
+    <h2>Installation</h2>
+    <ul>
+        <li>Place this module folder into your Odoo addons directory.</li>
+        <li>Update the apps list in Odoo and search for "Task Sequence Number".</li>
+        <li>Click 'Install' to activate the module and start using its features.</li>
+    </ul>
+</div>
+
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+        <img src="assets/screenshots/Screenshot1.jpg" alt="TO DO Screenshot 1" width="400" height="250"><br>
+        <img src="assets/screenshots/Screenshot2.jpg" alt="TO DO Screenshot 1" width="400" height="250"><br>
+        <img src="assets/screenshots/Screenshot3.jpg" alt="TO DO Screenshot 1" width="400" height="250"><br>
+        <img src="assets/screenshots/Screenshot4.jpg" alt="TO DO Screenshot 1" width="400" height="250"><br>
+    </div>
+
+    <h2>License</h2>
+    <p>LGPL-3 License: <a href="https://www.gnu.org/licenses/lgpl-3.0.html" target="_blank">https://www.gnu.org/licenses/lgpl-3.0.html</a></p>
+
+    <h2>Author & Support</h2>
+    <p>
+        Author: Alireza Riazi (AR)<br>
+        Email: <a href="mailto:alir.riazi@gmail.com">alir.riazi@gmail.com</a><br>
+        <!-- Website: <a href="#">TO DO: Add website</a> -->
+    </p>
+
+    <!-- <div class="footer">
+        HTML Description: <code>&lt;static/description/index.html&gt;</code>
+    </div> -->
+</div>
+
+</body>
+</html>

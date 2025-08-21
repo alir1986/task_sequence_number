@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="sequence_task" model="ir.sequence">
+            <field name="name">Task Sequence</field>
+            <field name="code">project.task</field>
+            <field name="prefix">TS/%(year)s/</field>
+            <field name="padding">6</field>
+        </record>
+    </data>
+</odoo>
